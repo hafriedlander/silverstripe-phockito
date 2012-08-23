@@ -1,8 +1,8 @@
 --- 
-format: 1
 handler: 
-  commit: 43e9111d6f727dd1e671d1d4046985007ca3a4d9
   branch: master
-lock: false
-repository_class: Piston::Git::Repository
+  commit: 293f81488336725a66ff61a490ededb60e14a33c
+format: 1
 repository_url: git://github.com/hafriedlander/phockito.git
+repository_class: Piston::Git::Repository
+lock: false
