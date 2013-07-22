@@ -13,6 +13,6 @@
 	"require":
 	{
 		"silverstripe/framework": "*",
-		"phockito": "*"
+		"hafriedlander/phockito": "*"
 	}
 }
