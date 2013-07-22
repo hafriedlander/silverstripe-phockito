@@ -1,12 +1,12 @@
 <?php
 
-class PhockitoSilverStripe {
+class PhockitoClassGlobalUpdater {
 
 	static $_all_classes = '_ALL_CLASSES';
 
 	static function register_double($double, $of, $isDoubleOfInterface = false) {
 		$_all_classes = self::$_all_classes;
-		
+
 		global ${$_all_classes};
 		if (${$_all_classes} && is_array(${$_all_classes}) && !isset(${$_all_classes}['exists'][$double])) {
 
@@ -35,4 +35,4 @@ class PhockitoSilverStripe {
 
 }
 
-Phockito::$type_registrar = 'PhockitoSilverStripe';
+Phockito::$type_registrar = 'PhockitoClassGlobalUpdater';
