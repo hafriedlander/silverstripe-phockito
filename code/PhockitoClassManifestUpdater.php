@@ -65,4 +65,5 @@ class PhockitoClassManifestUpdater extends SS_ClassManifest {
 	}
 }
 
+require_once(BASE_PATH . '/vendor/hafriedlander/phockito/Phockito.php');
 Phockito::$type_registrar = 'PhockitoClassManifestUpdater';

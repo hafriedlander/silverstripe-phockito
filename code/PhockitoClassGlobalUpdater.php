@@ -35,4 +35,5 @@ class PhockitoClassGlobalUpdater {
 
 }
 
+require_once(BASE_PATH . '/vendor/hafriedlander/phockito/Phockito.php');
 Phockito::$type_registrar = 'PhockitoClassGlobalUpdater';
