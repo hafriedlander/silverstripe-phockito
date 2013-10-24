@@ -3,7 +3,7 @@
 class PhockitoClassManifestUpdater extends SS_ClassManifest {
 	function __construct($manifest) {
 		foreach(array('classes', 'descendants', 'interfaces', 'implementors', 'configs', 'configDirs') as $prop) {
-			$this->$prop = $manifest->$prop;
+			if(property_exists($manifest, $prop)) $this->$prop = $manifest->$prop;
 		}
 	}
 
@@ -65,4 +65,5 @@ class PhockitoClassManifestUpdater extends SS_ClassManifest {
 	}
 }
 
+require_once(BASE_PATH . '/vendor/hafriedlander/phockito/Phockito.php');
 Phockito::$type_registrar = 'PhockitoClassManifestUpdater';
